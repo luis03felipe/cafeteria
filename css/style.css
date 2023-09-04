@@ -50,6 +50,7 @@ body {
   justify-content: space-between;
   padding: 1.5rem 7%;
   border-bottom: var(--border);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -85,4 +86,83 @@ body {
 
 #menu-btn {
   display: none;
+}
+
+.header .form-busca {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.header .form-busca input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 1rem;
+  text-transform: none;
+}
+
+.header .form-busca label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.header .form-busca label:hover {
+  color: var(--main-color);
+}
+
+.header .item-carrinho-container {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  height: calc(100vh - 9.5rem);
+  width: 35rem;
+  background: #fff;
+  padding: 0 1.5rem;
+}
+
+.header .item-carrinho-container .item-carrinho {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .item-carrinho-container .item-carrinho .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header .item-carrinho-container .item-carrinho .fa-times:hover {
+  color: var(--main-color);
+}
+
+.header .item-carrinho-container .item-carrinho img {
+  height: 7rem;
+}
+
+.header .item-carrinho-container .item-carrinho .conteudo h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.header .item-carrinho-container .item-carrinho .conteudo .preco {
+  font-size: 1.5rem;
+  color: var(--main-color);
 }
