@@ -115,6 +115,10 @@ body {
   transform-origin: top;
 }
 
+.header .form-busca.active {
+  transform: scaleY(1);
+}
+
 .header .form-busca input {
   height: 100%;
   width: 100%;
@@ -138,11 +142,15 @@ body {
 .header .item-carrinho-container {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -100%;
   height: calc(100vh - 9.5rem);
   width: 35rem;
   background: #fff;
   padding: 0 1.5rem;
+}
+
+.header .item-carrinho-container.active {
+  right: 0;
 }
 
 .header .item-carrinho-container .item-carrinho {
@@ -184,4 +192,54 @@ body {
 .header .item-carrinho-container .btn {
   width: 100%;
   text-align: center;
+}
+
+/*Media Querys*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .header .form-busca {
+    width: 90%;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }
