@@ -43,6 +43,10 @@ body {
   background: var(--bg);
 }
 
+section {
+  padding: 2rem 7%;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -194,6 +198,33 @@ body {
   text-align: center;
 }
 
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../imgs/home-img.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .conteudo {
+  max-width: 60rem;
+}
+
+.home .conteudo h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home .conteudo p {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
 /*Media Querys*/
 
 @media (max-width: 991px) {
@@ -203,6 +234,10 @@ body {
 
   .header {
     padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
   }
 }
 
@@ -235,6 +270,20 @@ body {
   .header .form-busca {
     width: 90%;
     right: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .conteudo h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .conteudo p {
+    font-size: 1.5rem;
   }
 }
 
