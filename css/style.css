@@ -47,6 +47,19 @@ section {
   padding: 2rem 7%;
 }
 
+.cabecalho {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.cabecalho span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -223,6 +236,38 @@ section {
   line-height: 1.8;
   padding: 1rem 0;
   color: #eee;
+}
+
+.sobre .linha {
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+}
+
+.sobre .linha .image {
+  flex: 1 1 45rem;
+}
+
+.sobre .linha .image img {
+  width: 100%;
+}
+
+.sobre .linha .conteudo {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.sobre .linha .conteudo h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.sobre .linha .conteudo p {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
 }
 
 /*Media Querys*/
