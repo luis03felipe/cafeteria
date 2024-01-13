@@ -17,5 +17,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 - Figma
 
-
-- parei no 23:20
+- parei no 26:20
